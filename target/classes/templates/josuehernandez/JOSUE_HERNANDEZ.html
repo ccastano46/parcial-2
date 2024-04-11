@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<th:block th:replace="fragments/general.html::headerfiles('Employee List')"></th:block>
+<head>
+    <meta charset="UTF-8">
+    <title>Josue Hernadnez List</title>
+      <link rel="stylesheet" href="../lab07.css">
+</head>
+<body>
+	<h1>JOSUE_HERNANDEZ LIST</h1>
+	<table>
+		<tr class="primeraFila">
+			<th class="primeraColumna">ID</th>
+			<th>Pregunta</th>
+			<th>Respuesta</th>
+			<th>Argumento</th>
+		</tr>
+		<tr th:each="JOSUE_HERNANDEZ : ${JOSUE_HERNANDEZs}">
+			<td th:text="${josue_hernandez.Pregunta}" class="primeraColumna"></td>
+			<td th:text="${josue_hernandez.Respuesta}"></td>
+			<td th:text="${josue_hernandez.Argumento}"></td>
+		</tr>
+
+
+	</table>
+	
+</body>
+</html>
