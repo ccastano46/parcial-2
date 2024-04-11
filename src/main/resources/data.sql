@@ -1,1 +1,1 @@
-INSERT INTO CONFIGURATION (PROPIEDAD, VALOR) VALUES ('1', 'Valor 1');
+INSERT INTO JOSUE_HERNANDEZ(Pregunta, Respueta, Argumento) VALUES ('1', 'B', 'Probando');
