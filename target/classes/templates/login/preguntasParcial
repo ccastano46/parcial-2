@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<th:block th:replace="fragments/general.html::headerfiles('parcial)"></th:block>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee List</title>
+      <link rel="stylesheet" href=".../parcialcss">
+</head>
+<body>
+	<h1>EMPLOYEES LIST</h1>
+	<table>
+		<tr class="primeraFila">
+			<th class="primeraColumna">ID</th>
+			<th>Respuesta Name</th>
+			<th>Pregunta Name</th>
+		
+		</tr>
+		<tr th:each="saray : ${preguntasparcial}">
+			<td th:text="${employee.id}" class="primeraColumna"></td>
+			<td th:text="${saray_mendivelso.pregunta}"></td>
+			<td th:text="${saray_mendivelso.respuesta}"></td>
+			<td th:text="${saray_mendivelso.argumentos}"></td>
+
+		</tr>
+
+
+	</table>
+	
+</body>
+</html>

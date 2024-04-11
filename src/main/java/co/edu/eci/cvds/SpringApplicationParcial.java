@@ -1,7 +1,12 @@
 package co.edu.eci.cvds;
 
 import co.edu.eci.cvds.model.Configuration;
-import co.edu.eci.cvds.service.ConfigurationService;
+import co.edu.eci.cvds.service.saray_mendivelsoConfigurationService;
+import co.edu.eci.cvds.service.saray_mendivelsoConfigurationService.ConfigurationService;
+import co.edu.eci.cvds.controller.saray_mendivelsoController;
+import co.edu.eci.cvds.model.saray_mendivelsoModel;
+import co.edu.eci.cvds.repository.saray_mendivelsoRepository;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,12 +21,16 @@ import java.util.Arrays;
 @Slf4j
 public class SpringApplicationParcial {
 	private final ConfigurationService configurationService;
-
+	private final saray_mendivelsoConfigurationService saray_mendivelsoConfigurationService;
 	@Autowired
 	public SpringApplicationParcial(
-			ConfigurationService configurationService
+			saray_mendivelsoConfigurationService saray_mendivelsoConfigurationService,
+			ConfigurationService config
+
 	) {
-		this.configurationService = configurationService;
+		this.saray_mendivelsoConfigurationService = saray_mendivelsoConfigurationService;
+		this.configurationService = config;
+
 	}
 
 	public static void main(String[] args) {

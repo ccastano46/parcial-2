@@ -5,14 +5,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
+
+public class saray_mendivelsoModel {
+    @Entity
 @Table(name = "CONFIGURATION")
 public class Configuration {
     @Id
-    @Column(name = "pregunta")
+    @Column(name = "PREGUNTA")
     private String pregunta;
-    @Column(name = "respuesta")
+    @Column(name = "RESPUESTA")
     private String respuesta;
+    @Column(name = "ACLARACION")
+    private String aclaracion;
 
     public Configuration() {
     }
@@ -35,7 +39,15 @@ public class Configuration {
     }
 
     public void setrespuesta(String respuesta) {
-        this.respuesta = respuesta;
+        this.respuesta= respuesta;
+    }
+
+    public String getaclaracion() {
+        return aclaracion;
+    }
+
+    public void setaclaracion(String aclaracion) {
+        this.aclaracion= aclaracion;
     }
 
     @Override
@@ -44,6 +56,7 @@ public class Configuration {
         int result = 1;
         result = prime * result + ((pregunta == null) ? 0 : pregunta.hashCode());
         result = prime * result + ((respuesta == null) ? 0 : respuesta.hashCode());
+        result = prime * result + ((aclaracion == null) ? 0 : aclaracion.hashCode());
         return result;
     }
 
@@ -66,11 +79,19 @@ public class Configuration {
                 return false;
         } else if (!respuesta.equals(other.respuesta))
             return false;
+         if (aclaracion == null) {
+            if (other.aclaracion != null)
+                return false;
+        } else if (!aclaracion.equals(other.aclaracion))
+            return false;
         return true;
     }
 
     @Override
     public String toString() {
-        return "Configuration [pregunta = " + pregunta + ", respuesta = " + respuesta + "]";
+        return "Configuration [pregunta = " + pregunta + ", respuesta = " + respuesta + ", aclaracion = " + aclaracion +"]";
     }
+}
+
+
 }
