@@ -1,1 +1,2 @@
 INSERT INTO CONFIGURATION (PROPIEDAD, VALOR) VALUES ('1', 'Valor 1');
+INSERT INTO CAMILO_CASTANO (Pregunta,Respuesta,Justificacion) VALUES ('100','A','Prueba');

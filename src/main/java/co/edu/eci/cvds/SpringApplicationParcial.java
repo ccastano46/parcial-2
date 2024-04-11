@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
+import co.edu.eci.cvds.service.CamiloCastanoService;
 
 import java.util.Arrays;
 
@@ -16,12 +17,16 @@ import java.util.Arrays;
 @Slf4j
 public class SpringApplicationParcial {
 	private final ConfigurationService configurationService;
+	private final CamiloCastanoService camiloService;
 
 	@Autowired
 	public SpringApplicationParcial(
-			ConfigurationService configurationService
+			ConfigurationService configurationService,
+			CamiloCastanoService camiloService
 	) {
 		this.configurationService = configurationService;
+		this.camiloService = camiloService;
+
 	}
 
 	public static void main(String[] args) {
