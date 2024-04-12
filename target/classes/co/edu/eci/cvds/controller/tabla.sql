@@ -1,4 +1,17 @@
 
-INSERT INTO pregunta (pregunta_1, pregunta_2,pregunta_3,pregunta_4) VALUES ('?','?','?','?');
-INSERT INTO respuesta(respuesta_1, respuesta_2,respuesta_3,respuesta_4) VALUES ('2','3','4','5');
-INSERT INTO argumentacion (argumentacion_1, argumentacion_2,argumentaciona_3,argumentacion_4) VALUES ('porque..','porque..','porquee','porque..');
+
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('1','b','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('2','c','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('3','b','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('4','b','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('5','c','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('6','c','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('7','a','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('8','d','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('9','a','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('10','b','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('11','d','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('12','d','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('13','b','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('14','b','?');
+INSERT INTO saray_mendivelso (pregunta, respuesta , argumentacion) VALUES ('15','c','?');
