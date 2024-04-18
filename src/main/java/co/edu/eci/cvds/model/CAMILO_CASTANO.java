@@ -15,7 +15,10 @@ public class CAMILO_CASTANO {
     @Column(name = "Justificacion")
     private String justificacion;
 
-   
+    public CAMILO_CASTANO() {
+     
+    }
+
     public CAMILO_CASTANO(String pregunta, String respuesta, String justificacion) {
         this.pregunta = pregunta;
         this.respuesta = respuesta;
