@@ -6,10 +6,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 
+
+@Entity
+@Table(name = "saray_mendivelso")
 public class saray_mendivelsoModel {
-    @Entity
-@Table(name = "CONFIGURATION")
-public class Configuration {
     @Id
     @Column(name = "PREGUNTA")
     private String pregunta;
@@ -18,12 +18,13 @@ public class Configuration {
     @Column(name = "ACLARACION")
     private String aclaracion;
 
-    public Configuration() {
+    public saray_mendivelsoModel() {
     }
 
-    public Configuration(String pregunta, String respuesta) {
+    public saray_mendivelsoModel(String pregunta, String respuesta, String aclaracion) {
         this.pregunta = pregunta;
         this.respuesta = respuesta;
+        this.aclaracion = aclaracion;
     }
 
     public String getpregunta() {
@@ -60,32 +61,7 @@ public class Configuration {
         return result;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Configuration other = (Configuration) obj;
-        if (pregunta == null) {
-            if (other.pregunta != null)
-                return false;
-        } else if (!pregunta.equals(other.pregunta))
-            return false;
-        if (respuesta == null) {
-            if (other.respuesta != null)
-                return false;
-        } else if (!respuesta.equals(other.respuesta))
-            return false;
-         if (aclaracion == null) {
-            if (other.aclaracion != null)
-                return false;
-        } else if (!aclaracion.equals(other.aclaracion))
-            return false;
-        return true;
-    }
+   
 
     @Override
     public String toString() {
@@ -94,4 +70,4 @@ public class Configuration {
 }
 
 
-}
+

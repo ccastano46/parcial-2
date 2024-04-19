@@ -2,7 +2,7 @@ package co.edu.eci.cvds;
 
 import co.edu.eci.cvds.model.Configuration;
 import co.edu.eci.cvds.service.saray_mendivelsoConfigurationService;
-import co.edu.eci.cvds.service.saray_mendivelsoConfigurationService.ConfigurationService;
+import co.edu.eci.cvds.service.ConfigurationService;
 import co.edu.eci.cvds.controller.saray_mendivelsoController;
 import co.edu.eci.cvds.model.saray_mendivelsoModel;
 import co.edu.eci.cvds.repository.saray_mendivelsoRepository;
@@ -22,14 +22,15 @@ import java.util.Arrays;
 public class SpringApplicationParcial {
 	private final ConfigurationService configurationService;
 	private final saray_mendivelsoConfigurationService saray_mendivelsoConfigurationService;
+	private ConfigurationService ConfigurationService;
 	@Autowired
 	public SpringApplicationParcial(
-			saray_mendivelsoConfigurationService saray_mendivelsoConfigurationService,
-			ConfigurationService config
+			ConfigurationService configurationService,
+			saray_mendivelsoConfigurationService saray_mendivelsoConfigurationService, ConfigurationService configurationService2
 
 	) {
+		this.configurationService = configurationService2;
 		this.saray_mendivelsoConfigurationService = saray_mendivelsoConfigurationService;
-		this.configurationService = config;
 
 	}
 
