@@ -14,11 +14,12 @@ public class JosueHernandezService {
     public JosueHernandezService(JosueHernandezRepository josueHernandezRepository) {
         this.josueHernandezRepository = josueHernandezRepository;
     }
-
+   
     
     public  List<JOSUE_HERNANDEZ> getJosue_HERNANDEZs() {
         return josueHernandezRepository.findAll();
     }
+   
 }
 
 
